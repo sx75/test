@@ -173,6 +173,7 @@ persist.vendor.sensors.debug.hal=0
 # USB
 sys.usb.mtp.batchcancel=1
 vendor.usb.diag.func.name=ffs
+ro.usb.uvc.enabled=true
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss_sw
 vendor.usb.rmnet.func.name=gsi
