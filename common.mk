@@ -455,7 +455,6 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
     android.hardware.usb@1.3-service-qti \
     android.hardware.usb.gadget@1.2-service-qti \
     usb_compositions.conf 
