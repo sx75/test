@@ -7,7 +7,7 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/oneplus/salami
+DEVICE_PATH := device/oneplus/benz
 
 # A/B
 AB_OTA_UPDATER := true
@@ -47,7 +47,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP591BL1,OP594DL1
+TARGET_OTA_ASSERT_DEVICE := OP5D3FL1
 
 # Audio
 AUDIO_FEATURE_ENABLED_DLKM := true
@@ -67,7 +67,7 @@ BOARD_USES_ALSA_AUDIO := true
 TARGET_USES_QCOM_MM_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := kalama
+TARGET_BOOTLOADER_BOARD_NAME := crow
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
@@ -133,8 +133,6 @@ TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/kalama_GKI.config \
-    vendor/oplus/kalama_GKI.config \
-    vendor/oplus/salami.config \
     vendor/debugfs.config
 
 # Kernel modules
@@ -148,38 +146,13 @@ BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery 
 SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.include.system_dlkm))
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8550-modules
-TARGET_KERNEL_EXT_MODULES := \
-	qcom/opensource/mmrm-driver \
-	qcom/opensource/mm-drivers/hw_fence \
-	qcom/opensource/mm-drivers/msm_ext_display \
-	qcom/opensource/mm-drivers/sync_fence \
-	qcom/opensource/audio-kernel \
-	qcom/opensource/camera-kernel \
-	qcom/opensource/dataipa/drivers/platform/msm \
-	qcom/opensource/datarmnet/core \
-	qcom/opensource/datarmnet-ext/aps \
-	qcom/opensource/datarmnet-ext/offload \
-	qcom/opensource/datarmnet-ext/shs \
-	qcom/opensource/datarmnet-ext/perf \
-	qcom/opensource/datarmnet-ext/perf_tether \
-	qcom/opensource/datarmnet-ext/sch \
-	qcom/opensource/datarmnet-ext/wlan \
-	qcom/opensource/securemsm-kernel \
-	qcom/opensource/display-drivers/msm \
-	qcom/opensource/eva-kernel \
-	qcom/opensource/video-driver \
-	qcom/opensource/graphics-kernel \
-	qcom/opensource/wlan/platform \
-	qcom/opensource/wlan/qcacld-3.0/.kiwi_v2 \
-	qcom/opensource/bt-kernel \
-	nxp/opensource/driver
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := kalama
+TARGET_BOARD_PLATFORM := crow
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -201,9 +174,9 @@ BOARD_SYSTEM_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_ONEPLUS_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_dlkm system_ext vendor vendor_dlkm
-BOARD_ONEPLUS_DYNAMIC_PARTITIONS_SIZE := 16936005632
+BOARD_ONEPLUS_DYNAMIC_PARTITIONS_SIZE := 15028191232
 BOARD_SUPER_PARTITION_GROUPS := oneplus_dynamic_partitions
-BOARD_SUPER_PARTITION_SIZE := 16940199936
+BOARD_SUPER_PARTITION_SIZE := 15032385536
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
@@ -304,4 +277,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/salami/BoardConfigVendor.mk
+include vendor/oneplus/benz/BoardConfigVendor.mk
