@@ -29,7 +29,7 @@
     <bool name="config_show_smooth_display">true</bool>
 
     <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">119</integer>
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">91</integer>
 
     <!-- The number of vibration intensity levels supported by the device.
 
