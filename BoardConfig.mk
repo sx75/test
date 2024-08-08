@@ -111,9 +111,6 @@ ODM_MANIFEST_FILES := \
     $(DEVICE_PATH)/manifest_odm.xml \
     $(DEVICE_PATH)/network_manifest_odm.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oplus
-
 # Init Boot
 BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
