@@ -2867,6 +2867,7 @@ odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so
 odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so
+vendor/etc/seccomp_policy/qms.policy
 vendor/lib64/libbase64.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libDcfHalFramework.so
