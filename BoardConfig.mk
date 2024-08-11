@@ -159,9 +159,6 @@ PRODUCT_COPY_FILES += \
 
 #TARGET_KERNEL_EXT_MODULE_ROOT := kernel/oneplus/sm8550-modules
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
-
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := crow
